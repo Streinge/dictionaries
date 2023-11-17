@@ -2,3 +2,6 @@ evaluate_[ɪˈvæljʊeɪt] оценивать вычислять давать_о
 explicit_[ɪksˈplɪsɪt] явный открытый четко явное_указание 
 initially_[ɪˈnɪʃəlɪ] первоначально начальный_этап начальный
 track_[træk] дорожка трек прослеживать путевой
+implementing
+magnitude
+capitalize
