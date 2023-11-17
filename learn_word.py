@@ -3,8 +3,8 @@ import codecs
 import random
 status = False
 dict = {}
-# f = codecs.open('dict.txt', 'r', 'utf-8')
-f = codecs.open('new_word.txt', 'r', 'utf-8')
+f = codecs.open('dict.txt', 'r', 'utf-8')
+# f = codecs.open('new_word.txt', 'r', 'utf-8')
 while True:
     # считываем строку
     line = f.readline()
@@ -17,7 +17,7 @@ while True:
     copy = list_line[:]
     for i in range(1, len(copy)):
         dict[list_line[0]].append(list_line[i])
-f.close()1
+f.close()
 mode = None
 
 while mode != '3':
