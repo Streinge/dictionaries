@@ -32,7 +32,7 @@ while mode != '3':
             if status is False:
                 f.write(new_word + ' ')
             else:
-                 f.write('\n' + new_word + ' ')
+                f.write('\n' + new_word + ' ')
             i = 1
             x = None
             while x != 'N':
@@ -57,7 +57,7 @@ while mode != '3':
                 if count <= 2:
                     var = input('Твое значение: ')
                     test_status = False
-                    for i in range (0, len(list_copy)):
+                    for i in range(0, len(list_copy)):
                         if var == list_copy[i]:
                             print('ЕСТЬ ТАКОЕ ЗНАЧЕНИЕ!')
                             list_copy.pop(i)
