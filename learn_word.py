@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import codecs
 import random
+NUMBER_REPIT_WORDS = 50
 status = False
 dict = {}
 f = codecs.open('dict.txt', 'r', 'utf-8')
@@ -47,7 +48,7 @@ while mode != '3':
     elif mode == '1':
         keys_sort = sorted(dict.keys())
         print(keys_sort)
-        for i in range(10):
+        for i in range(NUMBER_REPIT_WORDS):
             test_status = False
             cur = random.randint(0, len(keys_sort) - 1)
             list_copy = dict[keys_sort[cur]][:]
