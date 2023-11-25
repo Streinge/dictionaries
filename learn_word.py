@@ -2,10 +2,12 @@
 import codecs
 import random
 NUMBER_REPIT_WORDS = 50
+# WORD_FILE_NAME = 'dict.txt'
+# WORD_FILE_NAME = 'new_word.txt'
+WORD_FILE_NAME = 'repeat_word.txt'
 status = False
 dict = {}
-# f = codecs.open('dict.txt', 'r', 'utf-8')
-f = codecs.open('new_word.txt', 'r', 'utf-8')
+f = codecs.open(WORD_FILE_NAME, 'r', 'utf-8')
 while True:
     # считываем строку
     line = f.readline()
@@ -18,6 +20,16 @@ while True:
     copy = list_line[:]
     for i in range(1, len(copy)):
         dict[list_line[0]].append(list_line[i])
+f.close()
+f = codecs.open(WORD_FILE_NAME, 'w', 'utf-8')
+sort_keys_dict = sorted(dict)
+for i in sort_keys_dict:
+    string = i
+    for x in dict[i]:
+        string = string + ' ' + x
+    if i != sort_keys_dict[-1]:
+        string += '\n'
+    f.write(string)
 f.close()
 mode = None
 dict_copy = dict.copy()
