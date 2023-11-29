@@ -91,6 +91,8 @@ while mode != '3':
                         else:
                             count = 0
                 del dict[keys_sort[cur]]
+            print('ПРОВЕРКА 50 СЛОВ ЗАКОНЧИЛАСЬ')
+            print('Осталось слов: ', len(dict))
     except ValueError:
         print('Кончились слова')
     mode = input('Если хотите выйти нажмите "3" :')
