@@ -2,8 +2,8 @@
 import codecs
 import random
 NUMBER_REPIT_WORDS = 50
-WORD_FILE_NAME = 'dict.txt'
-# WORD_FILE_NAME = 'new_word.txt'
+# WORD_FILE_NAME = 'dict.txt'
+WORD_FILE_NAME = 'new_word.txt'
 # WORD_FILE_NAME = 'repeat_word.txt'
 status = False
 dict = {}
